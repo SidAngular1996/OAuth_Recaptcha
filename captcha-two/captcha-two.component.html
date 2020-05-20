@@ -1,0 +1,37 @@
+<body>
+  <table style="margin-left: 60px;">
+    <tr>
+     <td>
+          <br />
+          <br>
+     </td>
+    </tr>
+    <tr>
+     <td>
+       <input class="blank" type="text" id="mainCaptcha" value={{captcha}} disabled/>
+       <!-- <div class="container">
+        <img src="../../assets/captcha2.jfif" style="height: 400px; width: 100px;" alt="Capcha2">
+   
+        <div class="centered">{{captcha}}
+    
+        </div> -->
+        
+    
+        <!-- <input type="button" id="refresh" value="Refresh" (click)="Captcha();" /> -->
+      
+     </td>
+     <td>  <button (click)="Captcha();"class="btn"><i class="fa fa-refresh"></i></button></td>
+    </tr>
+    <tr>
+     <td>
+      <input type="text" id="txtInput" [(ngModel)]="input"/>    
+    </td>
+    <td>  <input id="Button1" type="button" value="Check" (click)="ValidCaptcha();"/></td>
+   </tr>
+   <tr>
+    <td>
+    
+    </td>
+  </tr>
+</table>
+</body>
