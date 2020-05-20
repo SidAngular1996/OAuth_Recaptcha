@@ -1,0 +1,27 @@
+
+ <br>
+<div>
+
+<!-- <input type="text" id="captcha" value={{captcha}} /><br/><br/> -->
+
+
+<div class="container">
+    <img src="../../assets/ripped.png" style="height: 40px; width: 100px;" alt="Capcha">
+
+    <div class="centered">{{captcha}}
+
+    </div>
+    
+</div>
+<br>
+<br>
+
+
+<input style="margin-left:60px;" type="text" id="inputText" [(ngModel)]="input"/><br/><br/>
+<!-- <input type="image" id="inputText" [(ngModel)]="input" src="../assets/images.png"/><br/><br/>  -->
+<div style="margin-left: 90px;">
+   
+<button (click)="generateCaptcha()">Refresh</button>
+<button (click)="check()">Submit</button>
+</div>
+</div>
